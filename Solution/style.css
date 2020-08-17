@@ -100,13 +100,10 @@ footer a:visited {
 footer a:hover {
     color: green;
 }
-footer: a:active {
+footer a:active {
     color: grey;
 }
 @media only screen and (max-width: 1045px){
-    body {
-
-    }
     .container {
         width: 65%;
         margin: auto;
