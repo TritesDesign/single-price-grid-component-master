@@ -1,0 +1,130 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+/* Global Styles */
+body {
+    width: 100%;
+    background: hsl(204, 43%, 93%);
+}
+.container {
+    width: 65%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "one one"
+    "two three";
+    font-family: Karla;
+    border-radius: 10px;
+    overflow: hidden;
+    color:white;
+}
+/* Grid Items */
+/* grid one */
+#one {
+    grid-area: one;
+    background-color: white;
+    padding: 3rem 4rem; 
+}
+#one> h1 {
+    color: hsl(179, 62%, 43%);
+    height: fit-content;
+}
+#one> h2#brightyellow {
+    color: hsl(71, 73%, 54%);
+}
+#one> h3#whitesmoke{
+    color: hsl(218, 22%, 67%);
+    line-height: 0.3in;
+}
+/* grid two */
+#two {
+    grid-area: two;
+    background-color: hsl(179, 62%, 43%);
+    
+    padding: 3rem 4rem; 
+    
+}
+#two h2>span#onespan {
+    font-size: 2.5rem;
+}
+#two h2>span#twospan {
+    padding-left: 10px;
+    opacity: 0.5;
+}
+#two h3 {
+    font-weight: 400;
+}
+#two button {
+    width:100%;
+    height: 50px;
+    border: none;
+    background-color:hsl(71, 73%, 54%);
+    color:white;
+    font-family: Karla;
+    font-size: 1rem;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#two button:hover {
+    opacity: 0.9;
+}
+/* grid three */
+#three {
+    grid-area: three;
+    background-color: rgb(90,193,194);
+    line-height: 0.3in;
+    padding: 3rem 4rem; 
+}
+#three h3 {
+    opacity: 0.6;
+    font-weight: 400;
+}
+/* Footer */
+footer {
+    background-color: rgb(56,56,56);
+    color: whitesmoke;
+    font-family: "Karla";
+    font-weight: 400;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    margin-top: 20px;
+}
+footer a {
+    text-decoration: none;
+}
+footer a:visited {
+    color: blue;
+}
+footer a:hover {
+    color: green;
+}
+footer: a:active {
+    color: grey;
+}
+@media only screen and (max-width: 1045px){
+    body {
+
+    }
+    .container {
+        width: 65%;
+        margin: auto;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "one"
+        "two"
+        "three";
+        font-family: Karla;
+        border-radius: 10px;
+        overflow: hidden;
+        color:white;
+    }
+    #two button {
+        margin-top: 40px;
+        height: 65px;
+    }
+}
+
