@@ -76,7 +76,9 @@ body {
     line-height: 0.3in;
     padding: 3rem 4rem; 
 }
-#three h3 {
+#three ul {
+    list-style: none;
+    padding: 0;
     opacity: 0.6;
     font-weight: 400;
 }
